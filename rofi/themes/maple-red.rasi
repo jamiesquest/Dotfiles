@@ -1,0 +1,92 @@
+/***************************
+******maple's red theme*****
+****************************/
+
+/*TODO: everything NotLikeThis*/
+
+* {
+	cobalt: 		#242f33;
+	off-cobalt:		#36353b;
+	bright-red:    		#f50324;
+	dark-red:		#971f1f;
+	gray:			#c1bcbf;
+	off-white:		#e9e9ea;
+	orange:			#de7b4f;
+
+	background-color:	@cobalt;
+	border-color:		@gray;
+	font:			"Source Code Variable";
+	text-color:		@off-white;
+}
+
+
+window{
+   background-color: #242f33;
+   border: 1;
+   padding: 5;
+}
+mainbox{
+   border: 0;
+   padding: 0;
+}
+message{
+   border: 2px 0px 0px ;
+   border-color: #000000;
+   padding: 1px ;
+}
+textbox{
+   text-color: #e9e9ea;
+}
+listview{
+   fixed-height: 0;
+   border: 2px 0px 0px;
+   border-color: @cobalt;
+   spacing: 2px;
+   scrollbar: false;
+   padding: 2px 0px 0px;
+}
+element{
+   border: 0;
+   padding: 2px;
+}
+element-text{
+   background-color:	inherit;
+   text-color:		inherit;
+}
+element.normal.normal{
+   background-color:	@cobalt;
+   text-color:		@off-white;
+}
+element.selected.normal{
+   background-color: 	@dark-red;
+   text-color: 		@off-white;
+}
+element.alternate.normal{
+   background-color:	@off-cobalt;
+   text-color:		@off-white;
+}
+sidebar{
+   border: 2px 0px 0px;
+}
+button.selected{
+   background-color:	@bright-red;
+   text-color:		@gray;
+}
+inputbar{
+   spacing:	0;
+   padding:	1px;
+}
+case-indicator{
+   spacing:	0;
+}
+entry{
+   padding: 4px 4px;
+   expand: false;
+   width: 10em;
+}
+prompt{
+   spacing: 0;
+   background-color: @cobalt;
+   text-color: @off-white;
+}
+
