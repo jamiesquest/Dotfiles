@@ -15,6 +15,9 @@ alias eneofetchconf='sudo vim ~/.config/neofetch/config.conf'
 alias ebashrc='sudo vim ~/.bashrc'
 alias ei3conf='sudo vim ~/.config/i3/config'
 alias epolybarconf='sudo vim ~/.config/polybar/config'
+alias atom-comp="atom --in-process-gpu"
+alias exinitrc="sudo vim ~/.xinitrc"
+alias locallibs="export LD_LIBRARY_PATH=/usr/local/lib/"
 
 # alias neofetch="neofetch --ascii ~/.config/neofetch/ascii"
 
@@ -24,6 +27,10 @@ if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integr
 
 # neofetch --ascii ~/.config/neofetch/ascii
 # if xhost >& /dev/null ; then echo "display exists" fi
-if xhost >& /dev/null ; then neofetch --ascii ~/.config/neofetch/ascii 
-fi
+# if xhost >& /dev/null ; then neofetch --ascii ~/.config/neofetch/ascii 
+# fi
 
+if [ "$TERM" == "xterm-kitty" ]
+then
+	neofetch --ascii ~/.config/neofetch/ascii
+fi

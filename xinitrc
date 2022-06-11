@@ -58,8 +58,8 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 xrdb -load ~/.Xresources
-VBoxClient-all &
-picom &
-exec xrandr --output Virtual1 --mode 1920x1080 &
+#VBoxClient-all &
+picom --experimental-backends --config ~/.config/picom/picom.conf &
+#exec xrandr --output Virtual1 --mode 1920x1080 &
 nitrogen --restore &
 exec i3
